@@ -1,0 +1,103 @@
+body {
+    background-color: #2b2d42ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#0b7a75ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+}
+header p{
+    margin: 0;
+}
+button{
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 5%;
+    background-color:#07a557;
+    color:rgb(197, 197, 197);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border:none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover{
+    background-color: #058a40;
+    transform: scale(1.05);
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    color:rgb(197, 197, 197);
+}
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+main p {
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+.body{
+    min-height: 100vh;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:monospace;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    background-image: 
+        linear-gradient(
+            to top right, #8B5Cf6 , #ec4899
+        );
+    position: absolute;
+    color: #4D4D4D ;
+    width: 400px;
+    height: 580px;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: 40%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+#next, #back{
+    position:absolute;
+    top: 40%;
+    color: #FFF;
+    background-color: transparent;
+    border:none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left:50px;
+}
+#next{
+    left:unset;
+    right:50px;
+}
+.apraksts{
+    font-size: 18px;
+}
