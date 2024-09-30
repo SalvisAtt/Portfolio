@@ -7,20 +7,23 @@
 </head>
 <body>
     <header>
-        <button onclick="openPage('about.html')">Par mani</button>
-        <button onclick="openPage('start.html')">Sākumlapa</button> 
-        <button onclick="openPage('Skills.html')">Manas prasmes </button> 
-        <button onclick="openPage('contact.html')">Kontakti </button> 
+        <nav class="about">
+            <button onclick="openPage('about.html')">Par mani</button>
+            <button onclick="openPage('start.html')">Sākumlapa</button> 
+            <button onclick="openPage('Skills.html')">Manas prasmes </button> 
+        <nav>
     </header>
     <div class="body">
         <div class="slider">
             <div class="item">
                 <h1>Portfolio</h1>
+                <p><img class="projectimg" src="./download.jpg"></p>
                 <h2>Apraksts:</h2>
                 <p class="apraksts">Projekts tika izveidots kā pirmais projekts manā portfoliā. Tas palīdzēja man apgūt pamatus tīmekļa izstrādē un izveidot strukturētu darba procesu. 
                     Šī pieredze man deva iespēju praktiski pielietot HTML, CSS un JavaScript prasmes. Lai uzlabotu lietotāja pieredzi, projektā tika iekļautas responsīvas dizaina funkcijas. 
                     Projekts tika arī optimizēts, lai nodrošinātu ātru ielādes laiku un saderību ar dažādām pārlūkprogrammām. 
                     Šis projekts kļuva par pamatu tālākajai izaugsmei un sarežģītākiem projektiem manā portfoliā.</p>
+                <h2>Links:</h2>
             </div>
             <div class="item">
                 <h1>Slide 2</h1>
@@ -48,6 +51,9 @@
     </div>
     <script src="app.js"></script>
 </body>
+<footer>
+    <p>&copy; 2024 Salvis Attiķis. All rights reserved.</p>
+</footer>
 </html>
 <script>
     function openPage(page) {

@@ -1,36 +1,109 @@
+/* General styles */
 body {
-    background-color: #2b2d42ff;
+    background-color: #2b2d42;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
 }
-header{
-    width: 100%;
-    height: 100px;
-    background-color:#0b7a75ff;
+
+.project{
+    width: 100px;
+    display: flex;
+}
+.projectimg{
+    align-items: center;
+    height: 150px;
+    border-radius: 60px;
+    border-style: bold;
+    margin-left: 90px;
+}
+/* Header and navigation */
+header {
+    background-color: #0b7a75;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+button {
+    background-color: #07a557;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #058a40;
+    transform: scale(1.05);
+}
+
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top:0;
+    padding: 50px 0;
+    background-color: #3f4756;
 }
-header p{
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.photo {
+    border-radius: 50%;
+    border: 5px solid #07a557;
+    height: 150px;
+    width: 150px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.hello {
+    font-size: 2.5em;
+    color: #fff;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-button{
-    height: 70px;
-    margin-right: 20px;
-    border-radius: 5%;
-    background-color:#07a557;
-    color:rgb(197, 197, 197);
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border:none;
-    transition: background-color 0.3s, transform 0.2s;
+/* Main text area */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #383e4a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-button:hover{
-    background-color: #058a40;
-    transform: scale(1.05);
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #07a557;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #d3d3d3;
 }
 main {
     padding: 20px;
@@ -54,6 +127,7 @@ main p {
     justify-content: center;
     align-items: center;
     font-family:monospace;
+    padding-bottom: 60px;
 }
 .slider {
     position: relative;
@@ -99,5 +173,80 @@ main p {
     right:50px;
 }
 .apraksts{
-    font-size: 18px;
+    font-size: 14px;
+}
+.link{
+    margin-bottom:10px;
+}
+/*  About lapa  */ 
+.container{
+    display:flex;
+}
+.container .p{
+    align-items: center;
+}
+.photo{
+    height: 160px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color:black;
+}
+
+.text-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding-left: 60px;
+}
+
+.hello {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: #A9A9A9;
+    font-family: monospace;
+} 
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+    color: #A9A9A9;
+    font-family: monospace;
+}
+
+p {
+    font-size: 30px;
+    font-family: monospace;
+    color: #A9A9A9;
+}
+
+h2{
+    color: #A9A9A9;
+    font-family:monospace;
+}
+.main{
+    font-size: 16px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0b7a75;
+    color: #fff;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 560px;
 }
